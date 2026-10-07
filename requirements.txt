@@ -1,0 +1,11 @@
+torch
+transformers
+sentencepiece
+protobuf
+tiktoken
+numpy
+pandas
+pyarrow
+scikit-learn
+scipy
+matplotlib
