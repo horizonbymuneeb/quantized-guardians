@@ -4,7 +4,7 @@ Code and per-input scores for the paper:
 
 **Quantized Guardians: Accuracy-Neutral Decision Churn in Compressed Prompt-Injection Detectors**
 Muneeb Anjum (ORCID [0009-0001-2042-7656](https://orcid.org/0009-0001-2042-7656))
-Preprint: [10.5281/zenodo.23210535](https://doi.org/10.5281/zenodo.23210535)
+Preprint: [10.5281/zenodo.23210534](https://doi.org/10.5281/zenodo.23210534)
 
 Compressing a prompt-injection detector can leave its F1 and AUROC almost unchanged while flipping which individual inputs it blocks. This repo measures that decision churn for four public detectors under FP32, BF16, simulated W8A8 INT8, and 4-bit round-to-nearest weight quantization (group-wise g128 and per-channel).
 
@@ -62,7 +62,7 @@ Everything runs on CPU. The full grid takes a few hours.
   title  = {Quantized Guardians: Accuracy-Neutral Decision Churn in Compressed Prompt-Injection Detectors},
   year   = {2026},
   publisher = {Zenodo},
-  doi    = {10.5281/zenodo.23210535}
+  doi    = {10.5281/zenodo.23210534}
 }
 ```
 
