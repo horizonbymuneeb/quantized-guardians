@@ -1,0 +1,1 @@
+20:09:57 done protectai gptq_w4pc_s2 calib 743s eval 1079s {"blocks": 13, "linears": 74, "alphas": [], "loss_ratio_mean": 0.32966081081081083, "seed": 2, "calib_sha1": "ff5a949746cb"}
