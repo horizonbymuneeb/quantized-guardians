@@ -1,0 +1,49 @@
+{
+ "n": 150,
+ "model": "protectai",
+ "Wch_Atok(=w8a8 sim)": {
+  "flip": 0.013333333333333334,
+  "mean_abs_dp": 0.01710825559172501,
+  "s": 103
+ },
+ "Wten_Aten7(=native-like)": {
+  "flip": 0.28,
+  "mean_abs_dp": 0.34946845114472164,
+  "s": 104
+ },
+ "Wten_Atok": {
+  "flip": 0.35333333333333333,
+  "mean_abs_dp": 0.36950795975444367,
+  "s": 112
+ },
+ "Wch_Aten7": {
+  "flip": 0.13333333333333333,
+  "mean_abs_dp": 0.16066692932625795,
+  "s": 109
+ },
+ "Wten_none(weights only)": {
+  "flip": 0.36666666666666664,
+  "mean_abs_dp": 0.37597393079591446,
+  "s": 100
+ },
+ "none_Aten7(acts only)": {
+  "flip": 0.21333333333333335,
+  "mean_abs_dp": 0.2115390982993362,
+  "s": 106
+ },
+ "Wten_Aten8(full 8-bit range)": {
+  "flip": 0.36666666666666664,
+  "mean_abs_dp": 0.39897374643564376,
+  "s": 107
+ },
+ "Wten_Aten7_skipFFNout": {
+  "flip": 0.14,
+  "mean_abs_dp": 0.11859362691227185,
+  "s": 104
+ },
+ "Wten_Aten7_skipHead": {
+  "flip": 0.28,
+  "mean_abs_dp": 0.3491715931047266,
+  "s": 67
+ }
+}
