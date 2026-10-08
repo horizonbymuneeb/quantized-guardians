@@ -1,0 +1,24 @@
+{
+ "runs": {
+  "fmops__gptq_w4pc_s0": {
+   "calib_s": 83.5,
+   "eval_s": 245.9,
+   "blocks": 7,
+   "linears": 38,
+   "alphas": [],
+   "loss_ratio_mean": 0.248571052631579,
+   "seed": 0,
+   "calib_sha1": "41035a7034f0"
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "aarch64",
+ "threads": 2,
+ "calib_pool": {
+  "deepset/prompt-injections": 546,
+  "xTRam1/safe-guard-prompt-injection": 8080,
+  "jackhhao/jailbreak-classification": 747
+ },
+ "calib_pool_n": 8971
+}
