@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "deepset__w8a8pt": {
+   "calib_s": 12.9,
+   "eval_s": 1148.5
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2
+}
