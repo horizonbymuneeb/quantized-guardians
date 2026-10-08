@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "piguard__bf16": {
+   "calib_s": 8.5,
+   "eval_s": 6916.2
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2
+}
