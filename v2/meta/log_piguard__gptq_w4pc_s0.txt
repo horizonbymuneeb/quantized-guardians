@@ -1,0 +1,6 @@
+[transformers] A new version of the following files was downloaded from https://huggingface.co/leolee99/PIGuard:
+- modeling_piguard.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 5429.69it/s]
+20:10:16 done piguard gptq_w4pc_s0 calib 735s eval 1101s {"blocks": 13, "linears": 74, "alphas": [], "unused": ["pooler.dense"], "loss_ratio_mean": 0.3451082191780822, "seed": 0, "calib_sha1": "41035a7034f0"}
