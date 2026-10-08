@@ -1,0 +1,14 @@
+{
+ "runs": {
+  "protectai__int8onnxpc": {
+   "eval_s": 259.8,
+   "batch": 1,
+   "per_channel": true,
+   "ort": "1.30.0"
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "aarch64",
+ "threads": 2
+}
