@@ -1,0 +1,27 @@
+{
+ "runs": {
+  "piguard__gptq_w4pc_s2": {
+   "calib_s": 726.9,
+   "eval_s": 1062.8,
+   "blocks": 13,
+   "linears": 74,
+   "alphas": [],
+   "unused": [
+    "pooler.dense"
+   ],
+   "loss_ratio_mean": 0.3480191780821918,
+   "seed": 2,
+   "calib_sha1": "ff5a949746cb"
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2,
+ "calib_pool": {
+  "deepset/prompt-injections": 546,
+  "xTRam1/safe-guard-prompt-injection": 8080,
+  "jackhhao/jailbreak-classification": 747
+ },
+ "calib_pool_n": 8971
+}
