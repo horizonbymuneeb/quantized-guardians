@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/104 [00:00<?, ?it/s]Loading weights: 100%|██████████| 104/104 [00:00<00:00, 4895.93it/s]
+19:58:12 done fmops fp32 calib 5s eval 368s {}
