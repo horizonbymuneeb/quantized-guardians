@@ -1,0 +1,1 @@
+20:11:09 done piguard gptq_w4pc_s1 calib 807s eval 1087s {"blocks": 13, "linears": 74, "alphas": [], "unused": ["pooler.dense"], "loss_ratio_mean": 0.3689986301369863, "seed": 1, "calib_sha1": "b2f7fd3fe164"}
