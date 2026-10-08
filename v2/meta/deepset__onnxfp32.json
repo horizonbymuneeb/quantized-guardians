@@ -1,0 +1,15 @@
+{
+ "runs": {
+  "deepset__onnxfp32": {
+   "eval_s": 700.7
+  },
+  "deepset__int8onnx": {
+   "eval_s": 468.6
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2,
+ "onnxruntime": "1.30.0"
+}
