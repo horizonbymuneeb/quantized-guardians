@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "protectai__w8a8pt": {
+   "calib_s": 7.9,
+   "eval_s": 760.0
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "aarch64",
+ "threads": 2
+}
