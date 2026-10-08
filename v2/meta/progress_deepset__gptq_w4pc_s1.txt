@@ -1,0 +1,1 @@
+20:18:37 done deepset gptq_w4pc_s1 calib 785s eval 1061s {"blocks": 13, "linears": 74, "alphas": [], "loss_ratio_mean": 0.36474594594594595, "seed": 1, "calib_sha1": "b2f7fd3fe164"}
