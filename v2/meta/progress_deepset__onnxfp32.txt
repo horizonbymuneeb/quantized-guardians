@@ -1,0 +1,2 @@
+19:51:45 done deepset onnxfp32 701s
+19:59:33 done deepset int8onnx 469s
