@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "protectai__fp32": {
+   "calib_s": 15.1,
+   "eval_s": 945.0
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2
+}
