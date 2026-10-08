@@ -1,0 +1,13 @@
+{
+ "runs": {
+  "protectai__int8dyn": {
+   "eval_s": 321.0,
+   "batch": 1
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2,
+ "qengine": "x86"
+}
