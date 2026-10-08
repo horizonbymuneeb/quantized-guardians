@@ -1,0 +1,3 @@
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 5355.63it/s]
+20:09:21 done protectai gptq_w4g128_s0 calib 717s eval 1069s {"blocks": 13, "linears": 74, "alphas": [], "loss_ratio_mean": 0.28799459459459464, "seed": 0, "calib_sha1": "41035a7034f0"}
