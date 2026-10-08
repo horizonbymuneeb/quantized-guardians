@@ -1,0 +1,15 @@
+{
+ "runs": {
+  "piguard__onnxfp32": {
+   "eval_s": 306.7
+  },
+  "piguard__int8onnx": {
+   "eval_s": 163.3
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2,
+ "onnxruntime": "1.30.0"
+}
