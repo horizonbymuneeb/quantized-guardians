@@ -1,0 +1,755 @@
+{
+ "n": 2755,
+ "n_clean": 1516,
+ "provenance": {
+  "protectai__fp32": "v2",
+  "protectai__awq_w4pc_s0": "v2",
+  "protectai__bf16": "v1",
+  "protectai__fp32_x86": "v2",
+  "protectai__gptq_w4g128_s0": "v2",
+  "protectai__gptq_w4pc_s0": "v2",
+  "protectai__gptq_w4pc_s1": "v2",
+  "protectai__gptq_w4pc_s2": "v2",
+  "protectai__int8dyn": "v2",
+  "protectai__int8dyn_x86": "v2",
+  "protectai__int8dynpc": "v2",
+  "protectai__int8onnx": "v2",
+  "protectai__onnxfp32": "v2",
+  "protectai__int8onnxpc": "v2",
+  "protectai__w4g128": "v1",
+  "protectai__w4pc": "v1",
+  "protectai__w8a8": "v1",
+  "protectai__w8a8pt": "v2",
+  "piguard__fp32": "v1",
+  "piguard__bf16": "v2",
+  "piguard__gptq_w4pc_s0": "v2",
+  "piguard__gptq_w4pc_s1": "v2",
+  "piguard__gptq_w4pc_s2": "v2",
+  "piguard__int8dyn": "v2",
+  "piguard__int8onnx": "v2",
+  "piguard__onnxfp32": "v2",
+  "piguard__w4g128": "v2",
+  "piguard__w4pc": "v1",
+  "piguard__w8a8": "v2",
+  "piguard__w8a8pt": "v2",
+  "deepset__fp32": "v1",
+  "deepset__gptq_w4pc_s0": "v2",
+  "deepset__gptq_w4pc_s1": "v2",
+  "deepset__gptq_w4pc_s2": "v2",
+  "deepset__int8dyn": "v2",
+  "deepset__int8onnx": "v2",
+  "deepset__onnxfp32": "v2",
+  "deepset__w4g128": "v1",
+  "deepset__w4pc": "v1",
+  "deepset__w8a8": "v1",
+  "deepset__w8a8pt": "v2",
+  "fmops__fp32": "v2",
+  "fmops__awq_w4pc_s0": "v2",
+  "fmops__fp32_x86": "v2",
+  "fmops__gptq_w4pc_s0": "v2",
+  "fmops__gptq_w4pc_s1": "v2",
+  "fmops__gptq_w4pc_s2": "v2",
+  "fmops__int8dyn": "v2",
+  "fmops__int8dyn_x86": "v2",
+  "fmops__int8onnx": "v2",
+  "fmops__onnxfp32": "v2",
+  "fmops__w4g128": "v1",
+  "fmops__w4pc": "v1",
+  "fmops__w8a8": "v1",
+  "fmops__w8a8pt": "v2"
+ },
+ "meta": {
+  "deepset__gptq_w4pc_s0": {
+   "runs": {
+    "deepset__gptq_w4pc_s0": {
+     "calib_s": 430.3,
+     "eval_s": 640.6,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.3387486486486487,
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "deepset__gptq_w4pc_s1": {
+   "runs": {
+    "deepset__gptq_w4pc_s1": {
+     "calib_s": 785.4,
+     "eval_s": 1061.2,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.36474594594594595,
+     "seed": 1,
+     "calib_sha1": "b2f7fd3fe164"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "deepset__gptq_w4pc_s2": {
+   "runs": {
+    "deepset__gptq_w4pc_s2": {
+     "calib_s": 452.9,
+     "eval_s": 677.4,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.3486851351351351,
+     "seed": 2,
+     "calib_sha1": "ff5a949746cb"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "deepset__int8dyn": {
+   "runs": {
+    "deepset__int8dyn": {
+     "eval_s": 891.5,
+     "batch": 1
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "qengine": "x86"
+  },
+  "deepset__onnxfp32": {
+   "runs": {
+    "deepset__onnxfp32": {
+     "eval_s": 700.7
+    },
+    "deepset__int8onnx": {
+     "eval_s": 468.6
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "onnxruntime": "1.30.0"
+  },
+  "deepset__w8a8pt": {
+   "runs": {
+    "deepset__w8a8pt": {
+     "calib_s": 12.9,
+     "eval_s": 1148.5
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "fmops__awq_w4pc_s0": {
+   "runs": {
+    "fmops__awq_w4pc_s0": {
+     "calib_s": 154.1,
+     "eval_s": 368.3,
+     "blocks": 7,
+     "linears": 38,
+     "alphas": [
+      0.5,
+      0.15000000000000002,
+      0.35000000000000003,
+      0.15000000000000002,
+      0.2,
+      0.15000000000000002,
+      0.35000000000000003,
+      0.25,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.25,
+      0.25,
+      0.2,
+      0.4,
+      0.25,
+      0.15000000000000002,
+      0.15000000000000002,
+      0.35000000000000003,
+      0.35000000000000003,
+      0.30000000000000004,
+      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.35000000000000003
+     ],
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "fmops__fp32": {
+   "runs": {
+    "fmops__fp32": {
+     "calib_s": 5.2,
+     "eval_s": 368.2
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "fmops__gptq_w4pc_s0": {
+   "runs": {
+    "fmops__gptq_w4pc_s0": {
+     "calib_s": 83.5,
+     "eval_s": 245.9,
+     "blocks": 7,
+     "linears": 38,
+     "alphas": [],
+     "loss_ratio_mean": 0.248571052631579,
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "fmops__gptq_w4pc_s1": {
+   "runs": {
+    "fmops__gptq_w4pc_s1": {
+     "calib_s": 139.6,
+     "eval_s": 363.6,
+     "blocks": 7,
+     "linears": 38,
+     "alphas": [],
+     "loss_ratio_mean": 0.2572605263157895,
+     "seed": 1,
+     "calib_sha1": "b2f7fd3fe164"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "fmops__gptq_w4pc_s2": {
+   "runs": {
+    "fmops__gptq_w4pc_s2": {
+     "calib_s": 124.0,
+     "eval_s": 361.4,
+     "blocks": 7,
+     "linears": 38,
+     "alphas": [],
+     "loss_ratio_mean": 0.2535736842105263,
+     "seed": 2,
+     "calib_sha1": "ff5a949746cb"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "fmops__int8dyn": {
+   "runs": {
+    "fmops__int8dyn": {
+     "eval_s": 76.5,
+     "batch": 1
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "qengine": "x86"
+  },
+  "fmops__onnxfp32": {
+   "runs": {
+    "fmops__onnxfp32": {
+     "eval_s": 539.9
+    },
+    "fmops__int8onnx": {
+     "eval_s": 228.5
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2,
+   "onnxruntime": "1.30.0"
+  },
+  "fmops__w8a8pt": {
+   "runs": {
+    "fmops__w8a8pt": {
+     "calib_s": 5.8,
+     "eval_s": 402.2
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "piguard__bf16": {
+   "runs": {
+    "piguard__bf16": {
+     "calib_s": 8.5,
+     "eval_s": 6916.2
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "piguard__gptq_w4pc_s0": {
+   "runs": {
+    "piguard__gptq_w4pc_s0": {
+     "calib_s": 735.3,
+     "eval_s": 1101.4,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "unused": [
+      "pooler.dense"
+     ],
+     "loss_ratio_mean": 0.3451082191780822,
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "piguard__gptq_w4pc_s1": {
+   "runs": {
+    "piguard__gptq_w4pc_s1": {
+     "calib_s": 807.4,
+     "eval_s": 1086.7,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "unused": [
+      "pooler.dense"
+     ],
+     "loss_ratio_mean": 0.3689986301369863,
+     "seed": 1,
+     "calib_sha1": "b2f7fd3fe164"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "piguard__gptq_w4pc_s2": {
+   "runs": {
+    "piguard__gptq_w4pc_s2": {
+     "calib_s": 726.9,
+     "eval_s": 1062.8,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "unused": [
+      "pooler.dense"
+     ],
+     "loss_ratio_mean": 0.3480191780821918,
+     "seed": 2,
+     "calib_sha1": "ff5a949746cb"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "piguard__int8dyn": {
+   "runs": {
+    "piguard__int8dyn": {
+     "eval_s": 383.6,
+     "batch": 1
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2,
+   "qengine": "x86"
+  },
+  "piguard__onnxfp32": {
+   "runs": {
+    "piguard__onnxfp32": {
+     "eval_s": 306.7
+    },
+    "piguard__int8onnx": {
+     "eval_s": 163.3
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "onnxruntime": "1.30.0"
+  },
+  "piguard__w4g128": {
+   "runs": {
+    "piguard__w4g128": {
+     "calib_s": 9.1,
+     "eval_s": 1088.3
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "piguard__w8a8": {
+   "runs": {
+    "piguard__w8a8": {
+     "calib_s": 25.0,
+     "eval_s": 758.2
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2
+  },
+  "piguard__w8a8pt": {
+   "runs": {
+    "piguard__w8a8pt": {
+     "calib_s": 10.2,
+     "eval_s": 1145.6
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "protectai__awq_w4pc_s0": {
+   "runs": {
+    "protectai__awq_w4pc_s0": {
+     "calib_s": 779.6,
+     "eval_s": 1113.4,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [
+      0.1,
+      0.05,
+      0.35000000000000003,
+      0.4,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.4,
+      0.05,
+      0.1,
+      0.35000000000000003,
+      0.45,
+      0.2,
+      0.2,
+      0.5,
+      0.35000000000000003,
+      0.05,
+      0.15000000000000002,
+      0.45,
+      0.25,
+      0.05,
+      0.1,
+      0.45,
+      0.30000000000000004,
+      0.0,
+      0.1,
+      0.4,
+      0.30000000000000004,
+      0.05,
+      0.05,
+      0.35000000000000003,
+      0.45,
+      0.1,
+      0.1,
+      0.4,
+      0.55,
+      0.0,
+      0.15000000000000002,
+      0.35000000000000003,
+      0.35000000000000003,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.05,
+      0.0,
+      0.2,
+      0.25,
+      0.2,
+      0.1
+     ],
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "protectai__fp32": {
+   "runs": {
+    "protectai__fp32": {
+     "calib_s": 15.1,
+     "eval_s": 945.0
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2
+  },
+  "protectai__gptq_w4g128_s0": {
+   "runs": {
+    "protectai__gptq_w4g128_s0": {
+     "calib_s": 717.3,
+     "eval_s": 1069.0,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.28799459459459464,
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "protectai__gptq_w4pc_s0": {
+   "runs": {
+    "protectai__gptq_w4pc_s0": {
+     "calib_s": 531.7,
+     "eval_s": 698.0,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.31793783783783786,
+     "seed": 0,
+     "calib_sha1": "41035a7034f0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "protectai__gptq_w4pc_s1": {
+   "runs": {
+    "protectai__gptq_w4pc_s1": {
+     "calib_s": 697.7,
+     "eval_s": 938.4,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.3384878378378378,
+     "seed": 1,
+     "calib_sha1": "b2f7fd3fe164"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "protectai__gptq_w4pc_s2": {
+   "runs": {
+    "protectai__gptq_w4pc_s2": {
+     "calib_s": 742.9,
+     "eval_s": 1078.9,
+     "blocks": 13,
+     "linears": 74,
+     "alphas": [],
+     "loss_ratio_mean": 0.32966081081081083,
+     "seed": 2,
+     "calib_sha1": "ff5a949746cb"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "calib_pool": {
+    "deepset/prompt-injections": 546,
+    "xTRam1/safe-guard-prompt-injection": 8080,
+    "jackhhao/jailbreak-classification": 747
+   },
+   "calib_pool_n": 8971
+  },
+  "protectai__int8dyn": {
+   "runs": {
+    "protectai__int8dyn": {
+     "eval_s": 321.0,
+     "batch": 1
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "qengine": "x86"
+  },
+  "protectai__int8dynpc": {
+   "runs": {
+    "protectai__int8dynpc": {
+     "eval_s": 877.8,
+     "batch": 1
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "x86_64",
+   "threads": 2,
+   "qengine": "x86"
+  },
+  "protectai__int8onnxpc": {
+   "runs": {
+    "protectai__int8onnxpc": {
+     "eval_s": 259.8,
+     "batch": 1,
+     "per_channel": true,
+     "ort": "1.30.0"
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2
+  },
+  "protectai__onnxfp32": {
+   "runs": {
+    "protectai__onnxfp32": {
+     "eval_s": 723.0
+    },
+    "protectai__int8onnx": {
+     "eval_s": 226.0
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2,
+   "onnxruntime": "1.30.0"
+  },
+  "protectai__w8a8pt": {
+   "runs": {
+    "protectai__w8a8pt": {
+     "calib_s": 7.9,
+     "eval_s": 760.0
+    }
+   },
+   "torch": "2.14.1+cpu",
+   "transformers": "5.19.0",
+   "cpu": "aarch64",
+   "threads": 2
+  }
+ }
+}
