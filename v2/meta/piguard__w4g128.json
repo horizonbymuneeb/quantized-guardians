@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "piguard__w4g128": {
+   "calib_s": 9.1,
+   "eval_s": 1088.3
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2
+}
