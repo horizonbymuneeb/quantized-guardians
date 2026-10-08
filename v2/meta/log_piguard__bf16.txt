@@ -1,0 +1,6 @@
+[transformers] A new version of the following files was downloaded from https://huggingface.co/leolee99/PIGuard:
+- modeling_piguard.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 7486.65it/s]
+21:35:00 done piguard bf16 calib 9s eval 6916s {}
