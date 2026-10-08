@@ -1,0 +1,1 @@
+19:47:40 done fmops gptq_w4pc_s2 calib 124s eval 361s {"blocks": 7, "linears": 38, "alphas": [], "loss_ratio_mean": 0.2535736842105263, "seed": 2, "calib_sha1": "ff5a949746cb"}
