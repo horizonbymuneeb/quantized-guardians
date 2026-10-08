@@ -1,0 +1,82 @@
+name: qguard-runs
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/run.yml']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {model: protectai, cfg: int8dynpc}
+          - {model: piguard, cfg: w4g128}
+          - {model: piguard, cfg: w8a8pt}
+          - {model: piguard, cfg: bf16}
+          - {model: piguard, cfg: onnxfp32}
+          - {model: piguard, cfg: gptq_w4pc_s0}
+          - {model: piguard, cfg: gptq_w4pc_s1}
+          - {model: piguard, cfg: gptq_w4pc_s2}
+          - {model: fmops, cfg: w8a8pt}
+          - {model: fmops, cfg: gptq_w4pc_s1}
+          - {model: fmops, cfg: gptq_w4pc_s2}
+          - {model: protectai, cfg: gptq_w4pc_s1}
+          - {model: protectai, cfg: gptq_w4pc_s2}
+          - {model: protectai, cfg: gptq_w4g128_s0}
+          - {model: protectai, cfg: awq_w4pc_s0}
+          - {model: fmops, cfg: awq_w4pc_s0}
+          - {model: deepset, cfg: int8dyn}
+          - {model: deepset, cfg: w8a8pt}
+          - {model: deepset, cfg: onnxfp32}
+          - {model: deepset, cfg: gptq_w4pc_s0}
+          - {model: deepset, cfg: gptq_w4pc_s1}
+          - {model: deepset, cfg: gptq_w4pc_s2}
+          - {model: protectai, cfg: int8dyn}
+          - {model: fmops, cfg: int8dyn}
+          - {model: protectai, cfg: fp32}
+          - {model: fmops, cfg: fp32}
+    env:
+      ROOT: ${{ github.workspace }}/work
+      HF_HOME: ${{ github.workspace }}/hf
+      TOKENIZERS_PARALLELISM: 'false'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: install
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch==2.14.1 || pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install transformers==5.19.0 datasets onnx onnxruntime==1.30.0 pandas pyarrow sentencepiece tiktoken protobuf scikit-learn || pip install transformers datasets onnx onnxruntime pandas pyarrow sentencepiece tiktoken protobuf scikit-learn
+          pip freeze > freeze.txt
+      - name: run
+        run: |
+          mkdir -p work/scores work/meta && cp evalset.parquet calib_pool.json work/
+          lscpu | head -20 > work/meta/lscpu_${{ matrix.model }}__${{ matrix.cfg }}.txt
+          cp freeze.txt work/meta/freeze_${{ matrix.model }}__${{ matrix.cfg }}.txt
+          python local_run.py ${{ matrix.model }} ${{ matrix.cfg }} 2>&1 | grep -v Warning | tail -200 > work/meta/log_${{ matrix.model }}__${{ matrix.cfg }}.txt || true
+          cp work/progress_local.log work/meta/progress_${{ matrix.model }}__${{ matrix.cfg }}.txt || true
+          rm -f work/evalset.parquet work/calib_pool.json; rm -rf work/onnx
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: out-${{ matrix.model }}-${{ matrix.cfg }}
+          path: work/
+  collect:
+    needs: run
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: arts, merge-multiple: true}
+      - run: |
+          git config user.name ci; git config user.email ci@users.noreply.github.com
+          git checkout -B results
+          mkdir -p out && cp -r arts/* out/ && ls -R out | head -100
+          git add out && git commit -m "results run ${{ github.run_id }}" && git push -f origin results
