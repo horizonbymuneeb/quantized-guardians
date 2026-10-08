@@ -1,0 +1,12 @@
+{
+ "runs": {
+  "fmops__fp32": {
+   "calib_s": 5.2,
+   "eval_s": 368.2
+  }
+ },
+ "torch": "2.14.1+cpu",
+ "transformers": "5.19.0",
+ "cpu": "x86_64",
+ "threads": 2
+}
